@@ -1,0 +1,234 @@
+MIT License
+
+Copyright (c) 2024 Tamim Taher
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%-------------------------
+% Resume in LaTeX
+% Author: Jake Gutierrez
+% Based on: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\documentclass[a4paper,10pt]{article}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome5} % For icons
+
+%----------FONT OPTIONS----------
+% Uncomment any one for a specific font
+% \usepackage[sfdefault]{FiraSans}  % Sans-serif
+% \usepackage[sfdefault]{roboto}    % Sans-serif
+% \usepackage[default]{sourcesanspro} % Sans-serif
+% \usepackage{CormorantGaramond}   % Serif
+% \usepackage{charter}             % Serif
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine-readable/ATS-parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small#4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \textbf{\scshape Sounabho Bag}} \\[5pt]
+    
+    \small 
+    \faPhone\ 6350504665 \quad $|$ \quad 
+    \faEnvelope\ \href{mailto:bagsounabh2003@gmail.com}{\color{blue}bagsounabh2003@gmail.com} \quad $|$ \quad 
+      \faLinkedin\ \href{https://linkedin.com/in/sounabho}{\color{blue}linkedin.com/in/sounabho} \\[3pt]
+    
+  \faGlobe\ \href{https://sounabh.vercel.app}
+  {\color{blue}sounabh.vercel.app}  \quad $|$ \quad
+    \faGithub\ \href{https://github.com/sounabh}{\color{blue}github.com/sounabh}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Arya College Of Engineering and IT}{Jaipur, Rajasthan}
+      {Bachelor of Technology in Artificial Intelligence \& Data Science,  CGPA:\textcolor{blue}{7.9}}{Oct 2021 -- July 2025}
+    \resumeSubheading
+      {Maheshwari Higher Senior Secondary School}{Jaipur, Rajasthan}
+      {12TH, \textcolor{blue}{92.42\%}}{Aug 2019 -- May 2021}
+\resumeSubHeadingListEnd
+
+\vspace{-2mm}
+\section{Relevant Coursework}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {}{}  
+      {Computer Networking, Database Management System (DBMS), Software Engineering}{}
+\resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Web Developer Intern }{March 2024 -- July 2024}
+      {Unified Mentor Pvt Ltd}
+      {\textcolor{blue}{\href{https://sounabh-speaksy-ai-next.vercel.app/}{Speaksy}}}
+      {\vspace{3pt} 
+      \resumeItemListStart
+        \resumeItem{Engineered an AI-powered platform that transforms videos into SEO-optimized blog posts, increasing content generation efficiency by 70\%, using Assembly AI and Gemini AI.}
+        \resumeItem{Collaborated with a team to architect a scalable, serverless infrastructure with NeonDB, ensuring 99.9\% uptime and seamless data handling.}
+        \resumeItem{ Optimized subscription management and user authentication by integrating Stripe for real-time payments and Clerk for secure sign-ins, reducing billing errors by 30\% and unauthorized access attempts by 50\%.  }
+       
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+
+   
+
+ 
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{\textcolor{blue}{\href{https://12angrymen.vercel.app}{Cinematic}}} $|$ \emph{Next.js, Express.js, Redis, MongoDB, Socket.IO}}{January 2024 -- May 2024}
+        \resumeItemListStart
+            \resumeItem{Designed an \textbf{AI-powered movie tracker} with search, ratings, reviews, and personalized recommendations, serving \textbf{50+ users} via Google Gemini API.}
+            \resumeItem{Incorporated \textbf{real-time chat and social interactions} using Socket.IO, reducing response times by \textbf{30\%} with Redis caching.}
+            \resumeItem{Structured a \textbf{scalable backend} with Express.js and MongoDB, efficiently handling \textbf{1000+ movie records} and user-generated content.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{\textcolor{blue}{\href{https://corner-liard.vercel.app/}{Corner}}} $|$ \emph{React, Express, Monaco, Agora, Socket.IO}}{September 2024 -- November 2024}
+        \resumeItemListStart
+            \resumeItem{Crafted a \textbf{real-time collaborative code editor} powered by Monaco Editor, enabling teams to code together.}
+            \resumeItem{Embedded \textbf{video chat via Agora RTC SDK}, enhancing seamless collaboration for remote teams.}
+            \resumeItem{Implemented a \textbf{persistent project management system} with MongoDB, allowing users to store and organize coding projects, improving workflow efficiency by \textbf{40\%}.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{\textcolor{blue}{\href{https://trackor.onrender.com/}{Trackor}}} $|$ \emph{Express, Leaflet.js, Socket.IO}}{January 2025 -- February 2025}
+        \resumeItemListStart
+            \resumeItem{Engineered a \textbf{live location tracker} utilizing WebSockets and Leaflet.js, ensuring \textbf{highly accurate real-time updates} with ±10m precision.}
+            \resumeItem{Introduced \textbf{QR code-based location sharing}, enabling \textbf{instant tracking access}, used by \textbf{100+ users}.}
+            \resumeItem{Optimized \textbf{multi-user tracking}, ensuring \textbf{99.9\% uptime} and smooth updates every \textbf{2 seconds} as users move.}
+        \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{
+    \item{
+        \textbf{Frontend}{: Javascript, NextJs, React, HTML/CSS, Typescript} \\
+        \textbf{Backend}{: ExpressJs, NodeJs, WebSocket, RestApi, Prisma, NestJs} \\
+        \textbf{Database \& DevOps}{: MongoDB, Sql, Redis, Docker, Git, Linux} \\
+        \textbf{Developer Tools}{: Postman, Stripe, Figma, Supabase, VsCode}
+    }}
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
