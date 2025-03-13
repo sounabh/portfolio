@@ -184,7 +184,7 @@ export const HeroSection = () => {
           >
             <div className="rounded-full overflow-hidden size-[130px] border-2 border-gray-900">
               <Image
-                src="/admin1.jpg"
+                src="/admin2.jpg"
                 width={150}
                 height={150}
                 className="size-full object-cover"
