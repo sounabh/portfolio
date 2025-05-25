@@ -3,7 +3,7 @@
 import { useRef } from "react"
 import Image from "next/image"
 import { motion, useScroll, useTransform } from "framer-motion"
-import { ChevronDown, ExternalLink } from "lucide-react"
+import { ChevronDown, ExternalLink, FileText } from "lucide-react"
 import grainImage from "@/assets/images/grain.jpg"
 import StarIcon from "@/assets/icons/star.svg"
 import SparkleIcon from "@/assets/icons/sparkle.svg"
@@ -184,7 +184,7 @@ export const HeroSection = () => {
           >
             <div className="rounded-full overflow-hidden size-[130px] border-2 border-gray-900">
               <Image
-                src="/admin2.jpg"
+                src="/admin1.jpg"
                 width={150}
                 height={150}
                 className="size-full object-cover"
@@ -226,20 +226,28 @@ export const HeroSection = () => {
 
         {/* Buttons */}
         <motion.div
-          className="flex flex-col md:flex-row justify-center items-center mt-10 gap-5"
+          className="flex flex-col md:flex-row justify-center items-center mt-10 gap-4"
           initial={{ y: 20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
+         
+
           <motion.button
-            className="group inline-flex items-center gap-3 border border-white/15 px-7 h-14 rounded-full bg-gray-900/50 backdrop-blur-sm hover:bg-gray-800/70 transition-all duration-300"
+            className="group inline-flex items-center gap-3 border border-blue-500/20 px-7 h-14 rounded-full bg-gray-900/50 backdrop-blur-sm hover:bg-gray-800/70 transition-all duration-300"
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
           >
-          <Link href={"https://github.com/sounabh"}>  <span className="font-medium">Explore My Work</span></Link>
-            <motion.div animate={{ y: [0, 3, 0] }} transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}>
-              <ChevronDown className="size-4 group-hover:text-emerald-400 transition-colors" />
-            </motion.div>
+            <Link 
+              href={"https://drive.google.com/file/d/14RlGfeRYfRoMXvFBDt-6BKKEis8QszRv/view?usp=drive_link"} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3"
+            >
+              <FileText className="size-4 group-hover:text-blue-400 transition-colors" />
+              <span className="font-medium">View Resume</span>
+              <ExternalLink className="size-4 group-hover:text-blue-400 transition-colors" />
+            </Link>
           </motion.button>
 
           <motion.button
@@ -247,13 +255,14 @@ export const HeroSection = () => {
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
           >
-            <span className="text-lg">👋</span>
-           <Link href={"https://linkedin.com/in/sounabho"}><span className="font-medium">Let's Connect</span></Link> 
-            <ExternalLink className="size-4 ml-1" />
+            <Link href={"https://linkedin.com/in/sounabho"} className="inline-flex items-center gap-3">
+              <span className="text-lg">👋</span>
+              <span className="font-medium">Let's Connect</span>
+              <ExternalLink className="size-4 ml-1" />
+            </Link>
           </motion.button>
         </motion.div>
       </motion.div>
     </motion.div>
   )
 }
-
